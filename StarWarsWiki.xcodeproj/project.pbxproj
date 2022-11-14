@@ -56,15 +56,39 @@
 		83ED5CCF2922666500CE4D62 /* StarWarsWiki */ = {
 			isa = PBXGroup;
 			children = (
-				83ED5CD02922666500CE4D62 /* AppDelegate.swift */,
-				83ED5CD22922666500CE4D62 /* SceneDelegate.swift */,
-				83ED5CD42922666500CE4D62 /* ViewController.swift */,
-				83ED5CD62922666500CE4D62 /* Main.storyboard */,
+				83ED5CE629226DD000CE4D62 /* ViewControllers */,
+				83ED5CE529226DCB00CE4D62 /* Config */,
+				83ED5CE429226DB400CE4D62 /* Storyboards */,
 				83ED5CD92922666600CE4D62 /* Assets.xcassets */,
-				83ED5CDB2922666600CE4D62 /* LaunchScreen.storyboard */,
-				83ED5CDE2922666600CE4D62 /* Info.plist */,
 			);
 			path = StarWarsWiki;
+			sourceTree = "<group>";
+		};
+		83ED5CE429226DB400CE4D62 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				83ED5CD62922666500CE4D62 /* Main.storyboard */,
+				83ED5CDB2922666600CE4D62 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		83ED5CE529226DCB00CE4D62 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				83ED5CD02922666500CE4D62 /* AppDelegate.swift */,
+				83ED5CD22922666500CE4D62 /* SceneDelegate.swift */,
+				83ED5CDE2922666600CE4D62 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		83ED5CE629226DD000CE4D62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83ED5CD42922666500CE4D62 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,18 +317,22 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.StarWarsWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,18 +349,22 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.StarWarsWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
