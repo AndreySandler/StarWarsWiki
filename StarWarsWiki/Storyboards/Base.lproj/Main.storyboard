@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="1629" y="-3"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Character-->
         <scene sceneID="VF1-IX-9ns">
             <objects>
                 <tableViewController id="rvY-KW-gUv" sceneMemberID="viewController">
@@ -96,7 +96,6 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Character" image="person.fill" catalog="system" id="xW5-52-e43"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="cLs-fx-CeV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqz-96-mQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
