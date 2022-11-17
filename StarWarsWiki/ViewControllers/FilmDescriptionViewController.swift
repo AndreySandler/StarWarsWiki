@@ -9,7 +9,7 @@ import UIKit
 
 class FilmDescriptionViewController: UIViewController {
     
-    // MARK: - IB Outlets
+    // MARK: - IBOutlets
     @IBOutlet var filmDescriptionLabel: UILabel!
     
     // MARK: - Public Properties

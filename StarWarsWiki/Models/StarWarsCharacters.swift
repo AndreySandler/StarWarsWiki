@@ -23,7 +23,7 @@ struct Character: Decodable {
     let eye_color: String
     let birth_year: String
     let gender: String
-    let homeworld: String
+    var homeworld: String
     let url: String
     let films: [String]
     let species: [String]
@@ -40,7 +40,6 @@ struct Character: Decodable {
     Eye Color: \(eye_color)
     Skin Color: \(skin_color)
     Birth Year: \(birth_year)
-    Homeworld: \(homeworld)
     """
     }
 }
@@ -56,6 +55,10 @@ struct Film: Decodable {
     Release Date: \(release_date)
     """
     }
+}
+
+struct HomeWorld: Decodable {
+    let name: String
 }
 
 enum codingKeys: String, CodingKey {

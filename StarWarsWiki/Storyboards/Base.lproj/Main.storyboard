@@ -90,8 +90,16 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Character" image="person.fill" catalog="system" id="xW5-52-e43"/>
                     <navigationItem key="navigationItem" title="Characters" id="JV9-C3-U1b">
-                        <barButtonItem key="leftBarButtonItem" title="Prev" id="ZIH-vP-gTa"/>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="wha-CT-1Xf"/>
+                        <barButtonItem key="leftBarButtonItem" title="Prev" id="ZIH-vP-gTa">
+                            <connections>
+                                <action selector="updateData:" destination="rvY-KW-gUv" id="jNo-E6-M2M"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" tag="1" title="Next" id="wha-CT-1Xf">
+                            <connections>
+                                <action selector="updateData:" destination="rvY-KW-gUv" id="nXc-z2-eBt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqz-96-mQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

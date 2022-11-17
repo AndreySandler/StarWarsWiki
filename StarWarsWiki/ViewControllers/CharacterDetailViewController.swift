@@ -9,12 +9,12 @@ import UIKit
 
 class CharacterDetailViewController: UIViewController {
     
-    // MARK: - IB Outlets
+    // MARK: - IBOutlets
     @IBOutlet var characterDetailTextView: UITextView!
     
     // MARK: - Public Properties
     var character: Character!
-
+    
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()

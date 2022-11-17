@@ -27,6 +27,13 @@ class CharactersViewController: UITableViewController {
         characterDetailVC.character = character
     }
     
+    // MARK: - IBActions
+    @IBAction func updateData(_ sender: UIBarButtonItem) {
+        sender.tag == 1
+        ? fetchCharacter(from: starWarsCharacters?.next ?? "Error")
+        : fetchCharacter(from: starWarsCharacters?.previous ?? "Error")
+    }
+    
     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         starWarsCharacters?.results.count ?? 0
