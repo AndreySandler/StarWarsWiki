@@ -246,6 +246,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="b8v-sq-Zjd"/>
                     <connections>
+                        <outlet property="charactersTableView" destination="tim-pD-XOl" id="ZR8-c9-BeK"/>
                         <outlet property="filmDescriptionLabel" destination="yS2-3o-JkI" id="7IZ-XA-CWj"/>
                     </connections>
                 </viewController>
@@ -253,10 +254,10 @@
             </objects>
             <point key="canvasLocation" x="3982.5" y="-3.1690140845070425"/>
         </scene>
-        <!--View Controller-->
+        <!--Character From Film View Controller-->
         <scene sceneID="dpe-Mm-O2e">
             <objects>
-                <viewController id="K20-Dy-1qm" sceneMemberID="viewController">
+                <viewController id="K20-Dy-1qm" customClass="CharacterFromFilmViewController" customModule="StarWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AK9-rL-5x3">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,6 +281,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ejd-Vu-lpt"/>
+                    <connections>
+                        <outlet property="characterDescriptionTextView" destination="Ayo-Dh-raN" id="cRh-Tg-wRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjD-zK-yZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

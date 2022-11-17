@@ -11,6 +11,7 @@ class FilmDescriptionViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet var filmDescriptionLabel: UILabel!
+    @IBOutlet var charactersTableView: UITableView!
     
     // MARK: - Public Properties
     var film: Film!
@@ -18,12 +19,21 @@ class FilmDescriptionViewController: UIViewController {
     // MARK: - Private Properties
     private var characters: [Character] = []
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCharacters()
         
         title = film.title
         filmDescriptionLabel.text = film.description
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = charactersTableView.indexPathForSelectedRow else { return }
+        let character = characters[indexPath.row]
+        
+        guard let charactersFromFilmVC = segue.destination as? CharacterFromFilmViewController else { return }
+        charactersFromFilmVC.character = character
     }
     
     // MARK: - Private Properties
