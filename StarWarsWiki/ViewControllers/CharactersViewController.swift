@@ -14,7 +14,7 @@ class CharactersViewController: UITableViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 70
+        tableView.rowHeight = 80
         
         fetchCharacter(from: Link.starWarsWikiApi.rawValue)
     }

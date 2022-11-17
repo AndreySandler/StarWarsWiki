@@ -66,6 +66,7 @@ enum codingKeys: String, CodingKey {
     case skinColor = "skin_color"
     case eyeColor = "eye_color"
     case birthYear = "birth_year"
+    case releaseDate = "release_date"
 }
 
 enum Link: String {

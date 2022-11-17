@@ -13,6 +13,7 @@
 		83A70DFE29264B1F000F776B /* FilmDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A70DFD29264B1F000F776B /* FilmDescriptionViewController.swift */; };
 		83C382742924FA0D00B1A94A /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C382732924FA0D00B1A94A /* CharactersViewController.swift */; };
 		83C382762926354B00B1A94A /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C382752926354B00B1A94A /* CharacterDetailViewController.swift */; };
+		83E6C8752926774B00B68437 /* CharacterFromFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C8742926774B00B68437 /* CharacterFromFilmViewController.swift */; };
 		83ED5CD12922666500CE4D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED5CD02922666500CE4D62 /* AppDelegate.swift */; };
 		83ED5CD32922666500CE4D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED5CD22922666500CE4D62 /* SceneDelegate.swift */; };
 		83ED5CD82922666500CE4D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ED5CD62922666500CE4D62 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		83A70DFD29264B1F000F776B /* FilmDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDescriptionViewController.swift; sourceTree = "<group>"; };
 		83C382732924FA0D00B1A94A /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		83C382752926354B00B1A94A /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		83E6C8742926774B00B68437 /* CharacterFromFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFromFilmViewController.swift; sourceTree = "<group>"; };
 		83ED5CCD2922666500CE4D62 /* StarWarsWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ED5CD02922666500CE4D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83ED5CD22922666500CE4D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				83C382752926354B00B1A94A /* CharacterDetailViewController.swift */,
 				83A70DFB2926411A000F776B /* FilmsViewController.swift */,
 				83A70DFD29264B1F000F776B /* FilmDescriptionViewController.swift */,
+				83E6C8742926774B00B68437 /* CharacterFromFilmViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				83ED5CD12922666500CE4D62 /* AppDelegate.swift in Sources */,
 				83A70DFC2926411A000F776B /* FilmsViewController.swift in Sources */,
+				83E6C8752926774B00B68437 /* CharacterFromFilmViewController.swift in Sources */,
 				83A70DFE29264B1F000F776B /* FilmDescriptionViewController.swift in Sources */,
 				83C382742924FA0D00B1A94A /* CharactersViewController.swift in Sources */,
 				83344AB52924311C00D260FD /* NetworkManager.swift in Sources */,
@@ -354,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarWarsWiki/Config/Info.plist;
@@ -368,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.10.0;
+				MARKETING_VERSION = 0.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.StarWarsWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -386,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarWarsWiki/Config/Info.plist;
@@ -400,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.10.0;
+				MARKETING_VERSION = 0.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.StarWarsWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
