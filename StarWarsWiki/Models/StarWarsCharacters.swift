@@ -18,10 +18,10 @@ struct Character: Decodable {
     let name: String
     let height: String
     let mass: String
-    let hair_color: String
-    let skin_color: String
-    let eye_color: String
-    let birth_year: String
+    let hairColor: String
+    let skinColor: String
+    let eyeColor: String
+    let birthYear: String
     let gender: String
     var homeworld: String
     let url: String
@@ -36,23 +36,24 @@ struct Character: Decodable {
     Gender: \(gender)
     Height: \(height)
     Mass: \(mass)
-    Hair Color: \(hair_color)
-    Eye Color: \(eye_color)
-    Skin Color: \(skin_color)
-    Birth Year: \(birth_year)
+    Hair Color: \(hairColor)
+    Eye Color: \(eyeColor)
+    Skin Color: \(skinColor)
+    Birth Year: \(birthYear)
     """
     }
 }
 
 struct Film: Decodable {
+    
     let title: String
-    let release_date: String
+    let releaseDate: String
     let characters: [String]
     
     var description: String {
         """
     Title: \(title)
-    Release Date: \(release_date)
+    Release Date: \(releaseDate)
     """
     }
 }
@@ -61,13 +62,6 @@ struct HomeWorld: Decodable {
     let name: String
 }
 
-enum codingKeys: String, CodingKey {
-    case hairColor = "hair_color"
-    case skinColor = "skin_color"
-    case eyeColor = "eye_color"
-    case birthYear = "birth_year"
-    case releaseDate = "release_date"
-}
 
 enum Link: String {
     case starWarsWikiApi = "https://swapi.py4e.com/api/people"
