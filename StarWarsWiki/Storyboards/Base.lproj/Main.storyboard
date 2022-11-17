@@ -32,7 +32,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="RsJ-3h-mK0" kind="show" id="qEU-r5-aPy"/>
+                                    <segue destination="RsJ-3h-mK0" kind="presentation" id="T3X-IP-uBw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,32 +53,12 @@
             </objects>
             <point key="canvasLocation" x="46.875" y="-3.1690140845070425"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="ugb-WM-MpR">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fzx-Td-Akc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Lgk-o7-2UA"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0UU-Cc-z6Q">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="rvY-KW-gUv" kind="relationship" relationship="viewControllers" id="v3F-Ys-ltl"/>
-                        <segue destination="6pa-jV-60D" kind="relationship" relationship="viewControllers" id="t3C-Rj-ii6"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hTl-tV-RYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1629" y="-3"/>
-        </scene>
-        <!--Character-->
+        <!--Characters-->
         <scene sceneID="VF1-IX-9ns">
             <objects>
                 <tableViewController id="rvY-KW-gUv" customClass="CharactersViewController" customModule="StarWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Oeo-tZ-qKo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -99,7 +79,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Jaq-B5-zRQ" kind="show" trigger="accessoryAction" id="jEq-dG-dLF"/>
+                                    <segue destination="Jaq-B5-zRQ" kind="show" id="ObY-7c-ym2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -109,55 +89,71 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Character" image="person.fill" catalog="system" id="xW5-52-e43"/>
+                    <navigationItem key="navigationItem" title="Characters" id="JV9-C3-U1b">
+                        <barButtonItem key="leftBarButtonItem" title="Prev" id="ZIH-vP-gTa"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="wha-CT-1Xf"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqz-96-mQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513" y="-3"/>
+            <point key="canvasLocation" x="1671" y="-3"/>
         </scene>
-        <!--View Controller-->
+        <!--Character Detail View Controller-->
         <scene sceneID="iXs-CI-eYp">
             <objects>
-                <viewController id="Jaq-B5-zRQ" sceneMemberID="viewController">
+                <viewController id="Jaq-B5-zRQ" customClass="CharacterDetailViewController" customModule="StarWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TzY-de-6ai">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2H-FZ-6q4">
+                                <rect key="frame" x="16" y="64" width="288" height="484"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eMV-qm-Inb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E2H-FZ-6q4" firstAttribute="leading" secondItem="eMV-qm-Inb" secondAttribute="leading" constant="16" id="Od7-cA-kh4"/>
+                            <constraint firstItem="E2H-FZ-6q4" firstAttribute="top" secondItem="eMV-qm-Inb" secondAttribute="top" constant="20" id="RmH-Tg-MIs"/>
+                            <constraint firstItem="eMV-qm-Inb" firstAttribute="trailing" secondItem="E2H-FZ-6q4" secondAttribute="trailing" constant="16" id="TCR-YV-JJE"/>
+                            <constraint firstItem="eMV-qm-Inb" firstAttribute="bottom" secondItem="E2H-FZ-6q4" secondAttribute="bottom" constant="20" id="XEx-4l-4Ja"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gZI-yO-mRA"/>
+                    <navigationItem key="navigationItem" id="gZI-yO-mRA">
+                        <barButtonItem key="rightBarButtonItem" title="Films" id="4wN-Gd-mIe">
+                            <connections>
+                                <segue destination="bEE-TI-kKz" kind="show" id="qan-CU-k04"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="characterDetailTextView" destination="E2H-FZ-6q4" id="vgN-xb-IsW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mn-Yw-DgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3381" y="-3"/>
+            <point key="canvasLocation" x="2503" y="-3"/>
         </scene>
-        <!--Planet-->
-        <scene sceneID="WSh-Vz-Ag5">
+        <!--View Controller-->
+        <scene sceneID="6e4-Ud-vAb">
             <objects>
-                <tableViewController id="6pa-jV-60D" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="2Zd-yS-a37">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                <viewController id="bEE-TI-kKz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YCz-Cr-mJq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KrB-pB-jIJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetsList" id="mdT-lZ-SFP">
-                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mdT-lZ-SFP" id="p60-Oh-sd1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="6pa-jV-60D" id="u3T-Cv-O9r"/>
-                            <outlet property="delegate" destination="6pa-jV-60D" id="ng6-3d-s0e"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Planet" image="circle.fill" catalog="system" id="9Rp-wu-de7"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OVE-3m-QaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iww-vR-6EE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUM-AP-j0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513" y="799"/>
+            <point key="canvasLocation" x="3287" y="-3"/>
         </scene>
         <!--Character-->
         <scene sceneID="fEb-Ze-oRk">
@@ -170,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fzx-Td-Akc" kind="relationship" relationship="rootViewController" id="Lzh-Wk-MXo"/>
+                        <segue destination="rvY-KW-gUv" kind="relationship" relationship="rootViewController" id="H5J-fq-v6Y"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4F3-mG-U8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -179,7 +175,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="mainScreenImage" width="118" height="209.5"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">

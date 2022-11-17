@@ -8,22 +8,24 @@
 import UIKit
 
 class CharacterDetailViewController: UIViewController {
+    
+    // MARK: - IB Outlets
+    @IBOutlet var characterDetailTextView: UITextView!
+    
+    // MARK: - Public Properties
+    var character: Character!
 
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        title = character.name
+        characterDetailTextView.text = character?.description
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let episodesVC = segue.destination as? EpisodesViewController else { return }
+        
+        episodesVC.character = character
     }
-    */
-
 }

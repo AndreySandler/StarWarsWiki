@@ -14,7 +14,17 @@ class CharactersViewController: UITableViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 70
+        
         fetchCharacter(from: Link.starWarsWikiApi.rawValue)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let character = starWarsCharacters?.results[indexPath.row]
+        
+        guard let characterDetailVC = segue.destination as? CharacterDetailViewController else { return }
+        characterDetailVC.character = character
     }
     
     // MARK: - TableViewDataSource
