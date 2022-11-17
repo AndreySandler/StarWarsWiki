@@ -65,6 +65,13 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		83E6C8732926606200B68437 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		83ED5CC42922666500CE4D62 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				83ED5CE629226DD000CE4D62 /* ViewControllers */,
+				83E6C8732926606200B68437 /* Views */,
 				83344AB32924037300D260FD /* Models */,
 				83344AB72924313000D260FD /* Services */,
 				83ED5CE529226DCB00CE4D62 /* Config */,
@@ -350,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarWarsWiki/Config/Info.plist;
@@ -364,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 0.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.StarWarsWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -382,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarWarsWiki/Config/Info.plist;
@@ -396,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 0.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.StarWarsWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

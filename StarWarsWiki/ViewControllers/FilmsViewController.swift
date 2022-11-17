@@ -11,10 +11,21 @@ class FilmsViewController: UITableViewController {
     
     // MARK: - Public Properties
     var character: Character!
-    var films: [Film] = []
     
+    // MARK: - Private Properties
+    private var films: [Film] = []
+    
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let film = films[indexPath.row]
+        
+        guard let filmDescriptionVC = segue.destination as? FilmDescriptionViewController else { return }
+        filmDescriptionVC.film = film
     }
     
     // MARK: - TableViewDataSource
