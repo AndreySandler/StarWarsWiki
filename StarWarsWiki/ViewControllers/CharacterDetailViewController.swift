@@ -24,7 +24,7 @@ class CharacterDetailViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let episodesVC = segue.destination as? EpisodesViewController else { return }
+        guard let episodesVC = segue.destination as? FilmsViewController else { return }
         
         episodesVC.character = character
     }

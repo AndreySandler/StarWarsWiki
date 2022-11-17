@@ -127,7 +127,7 @@
                     <navigationItem key="navigationItem" id="gZI-yO-mRA">
                         <barButtonItem key="rightBarButtonItem" title="Films" id="4wN-Gd-mIe">
                             <connections>
-                                <segue destination="bEE-TI-kKz" kind="show" id="qan-CU-k04"/>
+                                <segue destination="dOa-wB-vXs" kind="show" id="fHO-Ae-TUm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -139,21 +139,66 @@
             </objects>
             <point key="canvasLocation" x="2503" y="-3"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="6e4-Ud-vAb">
+        <!--Films-->
+        <scene sceneID="zs8-7j-eDf">
             <objects>
-                <viewController id="bEE-TI-kKz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YCz-Cr-mJq">
+                <tableViewController id="dOa-wB-vXs" customClass="FilmsViewController" customModule="StarWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BKg-Zu-FW0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KrB-pB-jIJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Iww-vR-6EE"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uUM-AP-j0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filmsList" id="46L-gf-vQK">
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="46L-gf-vQK" id="lrH-3I-i6o">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5Ia-2x-2bV" kind="show" id="XdN-mV-VBi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dOa-wB-vXs" id="4m2-i3-s4t"/>
+                            <outlet property="delegate" destination="dOa-wB-vXs" id="l13-lg-oGy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Films" id="vgU-cq-5tK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4A-mR-Cpp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3287" y="-3"/>
+            <point key="canvasLocation" x="3251" y="-3"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E5I-XR-eBd">
+            <objects>
+                <viewController id="5Ia-2x-2bV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="225-L4-jjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be3-aO-iYn">
+                                <rect key="frame" x="16" y="64" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D0I-ru-o1s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="be3-aO-iYn" firstAttribute="leading" secondItem="D0I-ru-o1s" secondAttribute="leading" constant="16" id="OAW-pT-GbF"/>
+                            <constraint firstItem="be3-aO-iYn" firstAttribute="top" secondItem="D0I-ru-o1s" secondAttribute="top" constant="20" id="pNj-Io-zBr"/>
+                            <constraint firstItem="D0I-ru-o1s" firstAttribute="trailing" secondItem="be3-aO-iYn" secondAttribute="trailing" constant="16" id="uDb-5p-1px"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b8v-sq-Zjd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AwU-4G-m9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3983" y="-3"/>
         </scene>
         <!--Character-->
         <scene sceneID="fEb-Ze-oRk">

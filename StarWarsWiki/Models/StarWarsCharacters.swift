@@ -45,6 +45,19 @@ struct Character: Decodable {
     }
 }
 
+struct Film: Decodable {
+    let title: String
+    let release_date: String
+    let characters: [String]
+    
+    var description: String {
+        """
+    Title: \(title)
+    Release Date: \(release_date)
+    """
+    }
+}
+
 enum codingKeys: String, CodingKey {
     case hairColor = "hair_color"
     case skinColor = "skin_color"
